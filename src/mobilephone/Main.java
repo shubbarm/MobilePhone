@@ -59,7 +59,8 @@ public class Main {
         String phone = sc.nextLine();
         Contact contact = Contact.createContact(name, phone);
         if (mobile.addContact(contact)) {
-            System.out.println("New contact added: name = " + name + ", phone = " + phone);
+            System.out.println("New contact added: name = " + name + ", "
+                    + "phone = " + phone);
         } else {
             System.out.println("Cannot add " + name + ", it's already on file");
         }
